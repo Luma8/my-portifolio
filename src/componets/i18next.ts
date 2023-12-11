@@ -1,27 +1,21 @@
-// i18n.js
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
+import i18next from "i18next";
+import { initReactI18next } from "react-i18next";
 
-i18n
-  .use(initReactI18next)
-  .init({
-    resources: {
-      en: {
-        translation: {
-          greeting: 'Hello!',
-        },
-      },
-      pt: {
-        translation: {
-          greeting: 'Olá!',
-        },
-      },
-    },
-    lng: 'en',
-    fallbackLng: 'en',
-    interpolation: {
-      escapeValue: false,
-    },
-  });
+import translationPortuguese from '../translation/Portuguese.json';
+import translationEnglish from '../translation/English.json';
 
-export default i18n;
+i18next
+.use(initReactI18next)
+.init({
+  lng: 'en',
+  resources: {
+    en: {
+      translation: translationEnglish
+    },
+    pt: {
+      translation: translationPortuguese
+    }
+  }
+});
+
+export default i18next;

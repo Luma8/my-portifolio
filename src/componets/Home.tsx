@@ -2,20 +2,20 @@
 import HomeImage from '../assets/Home.png';
 import { TypeAnimation } from 'react-type-animation';
 // import SeuComponente from './componente/componente';
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import { FaArrowDown } from 'react-icons/fa';
 import './styles.css';
 
 const Home = () => {
 
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>
       <div className='md:flex flex-wrap items-center justify-between md:px-20 pt-20 px-5 md:pb-0 pb-20'>
         <div className='md:w-[500px] w-[100%]s'>
-          <h5 className='font-bold text-[20px]'>Hello</h5>
-          <h4 className='text-[#8DA9C4] text-[35px] font-bold mb-0'>I'm Lucas</h4>
+          <h5 className='font-bold text-[20px]'>{t('line1')}</h5>
+          <h4 className='text-[#8DA9C4] text-[35px] font-bold mb-0'>{t('line2')}</h4>
           <div className='md:block hidden'>
             <TypeAnimation
               sequence={[

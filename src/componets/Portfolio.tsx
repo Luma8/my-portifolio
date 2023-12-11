@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaLink } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 interface Repo {
   full_name: string;
@@ -11,6 +12,8 @@ interface Repo {
 const Portfolio = () => {
 
   const [repos, setRepos] = useState<Repo[]>([]);
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     fetch('https://api.github.com/users/luma8/repos')
@@ -25,7 +28,7 @@ const Portfolio = () => {
   return (
     <div className="bg-[#333] p-10">
       <div className="whitespace-nowrap md:text-[35px] text-[25px] font-bold my-3 border-b-[6px] w-[100px] border-[#8DA9C4]">
-        <h1>Public repositories</h1>
+        <h1>{t('line10')}</h1>
       </div>
       <ul className="md:flex flex-wrap">
         {repos.map((repo: Repo) => {
@@ -35,8 +38,8 @@ const Portfolio = () => {
           const displayLanguage = languageLowerCase === 'c#' ? 'csharp' : languageLowerCase;
 
           return (
-            <li 
-            className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-20 hover:bg-[#555] duration-300 bg-[#111] w-[300px] p-2 my-2 rounded-md mr-4 mb-4 flex-grow" key={repo.full_name}>
+            <li
+              className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-20 hover:bg-[#555] duration-300 bg-[#111] w-[300px] p-2 my-2 rounded-md mr-4 mb-4 flex-grow" key={repo.full_name}>
               <div className="flex justify-between items-center mb-4">
                 <strong className="mr-2 overflow-hidden whitespace-nowrap text-ellipsis text-[16px]">{repo.name}</strong>
                 {repo.language !== null ?
@@ -55,6 +58,11 @@ const Portfolio = () => {
                 <a className="ease-linear" href={repo.clone_url}>
                   <FaLink size='20px' />
                 </a>
+              </div>
+              <div className="my-2">
+                <button className="rounded-md bg-[#222] p-2 text-[12px] font-bold hover:bg-[#8DA9C4] hover:text-[#111]">
+                  Description
+                </button>
               </div>
             </li>
           )

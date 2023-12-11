@@ -1,3 +1,4 @@
+import AboutMe from "./componets/AboutMe"
 import Home from "./componets/Home"
 import Navbar from "./componets/Navbar"
 import Portfolio from "./componets/Portfolio"
@@ -8,6 +9,7 @@ function App() {
     <>
       <Navbar />
       <Home />
+      <AboutMe />
       <Portfolio />
     </>
   )
