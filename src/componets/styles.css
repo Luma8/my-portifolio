@@ -20,5 +20,9 @@
 .navbar {
   position: fixed;
   width: 100%;
-  z-index: 999;
+  z-index: 9;
+}
+
+.modal-color {
+  background: rgba(0, 0, 0, 0.9);
 }

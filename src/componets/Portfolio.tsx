@@ -1,17 +1,23 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { useEffect, useState } from "react";
 import { FaLink } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import Modal from "./modal";
 
 interface Repo {
   full_name: string;
   name: string;
   clone_url: string;
   language: string;
+  description?: string;
 }
 
 const Portfolio = () => {
 
   const [repos, setRepos] = useState<Repo[]>([]);
+  const [currentRepo, setCurrentRepo] = useState<Repo | Repo[]>([]);
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
+  const [visibleItems, setVisibleItems] = useState<number>(6);
 
   const { t } = useTranslation();
 
@@ -25,16 +31,35 @@ const Portfolio = () => {
       })
   }, []);
 
+  const onModalOpen = (currentData: Repo) => {
+    setCurrentRepo(currentData);
+    setModalOpen(true);
+  }
+  const onModalClose = () => {
+    setCurrentRepo([]);
+    setModalOpen(false);
+  }
+
+  const handleReadMore = () => {
+    setVisibleItems((prevVisibleItems) => prevVisibleItems + 5);
+  }
+
   return (
     <div className="bg-[#333] p-10">
       <div className="whitespace-nowrap md:text-[35px] text-[25px] font-bold my-3 border-b-[6px] w-[100px] border-[#8DA9C4]">
         <h1>{t('line10')}</h1>
       </div>
+      {
+        modalOpen && (
+          <div>
+            {/* @ts-expect-error */}
+            <Modal descript={currentRepo.description} title={currentRepo.name} onClose={onModalClose} text={t('line11')}/>
+          </div>
+        )
+      }
       <ul className="md:flex flex-wrap">
-        {repos.map((repo: Repo) => {
-
+        {repos.slice(0, visibleItems).map((repo: Repo) => {
           const languageLowerCase = repo?.language?.toLowerCase();
-
           const displayLanguage = languageLowerCase === 'c#' ? 'csharp' : languageLowerCase;
 
           return (
@@ -60,14 +85,21 @@ const Portfolio = () => {
                 </a>
               </div>
               <div className="my-2">
-                <button className="rounded-md bg-[#222] p-2 text-[12px] font-bold hover:bg-[#8DA9C4] hover:text-[#111]">
-                  Description
+                <button onClick={() => onModalOpen(repo)} className="rounded-md bg-[#222] p-2 text-[12px] font-bold hover:bg-[#8DA9C4] hover:text-[#111]">
+                  {t('line12')}
                 </button>
               </div>
             </li>
           )
         })}
       </ul>
+      <div className="text-center my-2">
+        {repos.length > visibleItems && (
+          <button onClick={handleReadMore} className="rounded-md bg-[#222] p-2 text-[15px] hover:bg-[#8DA9C4] hover:text-[#111]">
+            {t('line13')}
+          </button>
+        )}
+      </div>
     </div>
   )
 }
