@@ -16,14 +16,13 @@ const Navbar = () => {
   }
 
   const changeLanguage = (lng: string) => {
-    // i18n.changeLanguage(lng);
     setLang(lng);
   }
 
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
-      if (offset > 100) {
+      if (offset > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -35,62 +34,59 @@ const Navbar = () => {
     }
   }, []);
 
-  const navbarClass = scrolled ? 'bg-[#111]' : '';
-  const toggleCollor = scrolled ? 'bg-[#555]' : '';
-
   return (
-    <nav className={`p-4 flex justify-between navbar ${navbarClass}`}>
-      <div className="flex">
-        <FaRocket size={'30px'} color={'#8DA9C4'} />
+    <nav className={`px-6 py-4 flex justify-between items-center navbar animate-slide-down ${
+      scrolled 
+        ? 'glass shadow-lg shadow-black/20' 
+        : 'bg-transparent'
+    }`}>
+      <div className="flex items-center gap-2">
+        <div className="p-2 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20">
+          <FaRocket size={'22px'} className="text-primary" />
+        </div>
       </div>
-      <div className="flex items-center">
-        <div className={`ml-5 toggle-container ${toggleCollor}`}>
-          <button className="" onClick={() => {
+      <div className="flex items-center gap-4">
+        <div className="toggle-container">
+          <button onClick={() => {
             changeLanguage('en')
             onClickLanguageChange('en')
           }}>
             <span
               className={
                 lang === 'en'
-                  ?
-                  'fi fi-us border-flag-active'
-                  :
-                  'fi fi-us border-flag'
+                  ? 'fi fi-us border-flag-active'
+                  : 'fi fi-us border-flag'
               }>
             </span>
           </button>
-          <button className="" onClick={() => {
+          <button onClick={() => {
             changeLanguage('pt')
             onClickLanguageChange('pt')
           }}>
             <span
               className={
                 lang === 'pt'
-                  ?
-                  "fi fi-br border-flag-active"
-                  :
-                  "fi fi-br border-flag"}
+                  ? "fi fi-br border-flag-active"
+                  : "fi fi-br border-flag"}
             >
             </span>
           </button>
         </div>
-        <ul className="flex items-center">
-          {/* <li className="mx-2 font-bold text-[#8DA9C4]">Home</li>
-          <li className="mx-2">Portfilo</li>
-          <li className="mx-2">Contact</li> */}
-          <li className="mx-1" >
-            <a href="https://github.com/Luma8">
-              <FaGithub />
+        <div className="h-5 w-px bg-white/10"></div>
+        <ul className="flex items-center gap-3">
+          <li>
+            <a href="https://github.com/Luma8" target="_blank" rel="noopener noreferrer" className="social-link">
+              <FaGithub size="18px" />
             </a>
           </li>
-          <li className="mx-1" >
-            <a href="https://www.linkedin.com/in/lucas-matheus-67bba5201/">
-              <FaLinkedin />
+          <li>
+            <a href="https://www.linkedin.com/in/lucas-matheus-67bba5201/" target="_blank" rel="noopener noreferrer" className="social-link">
+              <FaLinkedin size="18px" />
             </a>
           </li>
-          <li className="mx-1">
-            <a href="https://www.instagram.com/um_lucas_aleatorio/">
-              <FaInstagramSquare />
+          <li>
+            <a href="https://www.instagram.com/um_lucas_aleatorio/" target="_blank" rel="noopener noreferrer" className="social-link">
+              <FaInstagramSquare size="18px" />
             </a>
           </li>
         </ul>

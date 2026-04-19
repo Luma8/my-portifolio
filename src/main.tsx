@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 // import App from './App.tsx'
 import './index.css'
-import './componets/i18next';
+import './Pages/i18next.ts';
 import Navgator from './Navgator.tsx';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

@@ -1,20 +1,21 @@
-// import { Routes } from "react-router-dom"
-import AboutMe from "./componets/AboutMe"
-import Footer from "./componets/Footer"
-import Home from "./componets/Home"
-import Navbar from "./componets/Navbar"
-import Portfolio from "./componets/Portfolio"
+import AboutMe from "./Pages/AboutMe"
+import Footer from "./Pages/Footer"
+import Home from "./Pages/Home"
+import Navbar from "./Pages/Navbar"
+import Portfolio from "./Pages/Portfolio"
+import Video from "./Pages/Video"
 
 function App() {
 
   return (
-    <>
+    <div className="bg-dark min-h-screen">
       <Navbar />
       <Home />
       <AboutMe />
+      <Video />
       <Portfolio />
       <Footer />
-    </>
+    </div>
   )
 }
 

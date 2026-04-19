@@ -1,0 +1,70 @@
+.toggle-container {
+    width: 68px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px;
+    background-color: rgba(17, 17, 24, 0.6);
+    border: 1px solid rgba(141, 169, 196, 0.1);
+    transition: all 0.3s ease;
+}
+.toggle-container:hover {
+    border-color: rgba(141, 169, 196, 0.25);
+}
+.border-flag {
+    border-radius: 100%;
+    font-size: 20px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.border-flag:hover {
+    opacity: 0.8;
+}
+.border-flag-active {
+    border-radius: 100%;
+    font-size: 20px;
+    opacity: 1;
+    border: 2px solid #8DA9C4;
+    box-shadow: 0 0 10px rgba(141, 169, 196, 0.3);
+    transition: all 0.3s ease;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-color {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Social link hover */
+.social-link {
+  transition: all 0.3s ease;
+  color: rgba(255, 255, 255, 0.6);
+}
+.social-link:hover {
+  color: #8DA9C4;
+  transform: translateY(-2px);
+}
+
+/* Button glow on hover */
+.btn-glow {
+  position: relative;
+  transition: all 0.3s ease;
+}
+.btn-glow:hover {
+  box-shadow: 0 0 20px rgba(108, 99, 255, 0.3);
+}
+
+/* Section divider */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(141, 169, 196, 0.2), transparent);
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Create Target System - Wukong Attack Target",
+    "videoSrc": "src/Videos/Wukong attack Target.mp4",
+    "description": "In this project, I created a dynamic targeting system that adjusts the player's direction toward a target to ensure the attack hits.",
+    "technologies": ["Unity", "C#", "Photoshop"]
+  },
+  {
+    "id": 2,
+    "title": "Create a Wukong Hack n Slash Battle System",
+    "videoSrc": "src/Videos/Wukong Attack Hack n Slash.mp4",
+    "description": "In this project, I developed a hack and slash battle system inspired by Devil My Cry combat Features.",
+    "technologies": ["Unity", "C#", "Photoshop"]
+  }
+]
