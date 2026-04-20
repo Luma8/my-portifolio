@@ -4,7 +4,7 @@ interface Project {
     id: number;
     title: string;
     description?: string;
-    videoSrc: string;
+    youtubeId: string;
     technologies: string[];
 }
 
@@ -26,12 +26,12 @@ const VideoContent = () => {
                             className="group glass rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-accent/10 hover:border-primary/20"
                         >
                             <div className="relative overflow-hidden">
-                                <video
-                                    className="w-full h-[200px] object-cover bg-dark-300 transition-transform duration-500 group-hover:scale-105"
-                                    src={project.videoSrc}
-                                    controls
-                                    preload="metadata"
-                                    muted
+                                <iframe
+                                    className="w-full h-[200px] bg-dark-300 transition-transform duration-500 group-hover:scale-105"
+                                    src={`https://www.youtube.com/embed/${project.youtubeId}`}
+                                    title={project.title}
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
                                 />
                             </div>
                             <div className="p-5">
