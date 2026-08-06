@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { FaGithub, FaLinkedin, FaRocket, FaInstagramSquare } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
+import CVDownload from '../Components/CVDownload';
+import HudFrame from '../Components/HudFrame';
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 const Navbar = () => {
@@ -41,9 +43,11 @@ const Navbar = () => {
         : 'bg-transparent'
     }`}>
       <div className="flex items-center gap-2">
-        <div className="p-2 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20">
-          <FaRocket size={'22px'} className="text-primary" />
-        </div>
+        <HudFrame cornerClassName="border-primary/50" size={8}>
+          <div className="p-2 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20">
+            <FaRocket size={'22px'} className="text-primary" />
+          </div>
+        </HudFrame>
       </div>
       <div className="flex items-center gap-4">
         <div className="toggle-container">
@@ -72,6 +76,8 @@ const Navbar = () => {
             </span>
           </button>
         </div>
+        <div className="h-5 w-px bg-white/10"></div>
+        <CVDownload compact />
         <div className="h-5 w-px bg-white/10"></div>
         <ul className="flex items-center gap-3">
           <li>

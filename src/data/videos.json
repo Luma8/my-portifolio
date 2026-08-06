@@ -1,0 +1,96 @@
+[
+  {
+    "id": 1,
+    "title": "Create a Wukong Hack n Slash Battle System",
+    "src": "/videos/Wukong Attack Hack n Slash.mp4",
+    "poster": "/TumbNails/Wukong.png",
+    "description": {
+      "en": "In this project, I developed a hack and slash battle system inspired by Devil May Cry combat features.",
+      "pt": "Neste projeto, desenvolvi um sistema de combate hack and slash inspirado nas mecânicas de combate de Devil May Cry."
+    },
+    "technologies": [
+      "Unity",
+      "C#",
+      "MVC Architecture"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Create Target System - Wukong Attack Target",
+    "src": "/videos/Wukong attack Target.mp4",
+    "poster": "/TumbNails/Wukong.png",
+    "description": {
+      "en": "In this project, I created a dynamic targeting system that adjusts the player's direction toward a target to ensure the attack hits.",
+      "pt": "Neste projeto, criei um sistema de mira dinâmico que ajusta a direção do jogador em relação a um alvo para garantir que o ataque acerte."
+    },
+    "technologies": [
+      "Unity",
+      "C#",
+      "MVC Architecture"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Match 3 Arena Gameplay",
+    "src": "/videos/Match-3-Arena-Gameplay (Short Version).mp4",
+    "poster": "/TumbNails/Match3.png",
+    "description": {
+      "en": "In this project, I was responsible for implementing the arsenal system, item and power-up mechanics, and multiplayer networking using Unity's Netcode for GameObjects. This involved working with Server RPCs and Client RPCs to handle client-server communication, as well as structuring the codebase around an MVC (Model-View-Controller) architecture to ensure scalability and maintainability.",
+      "pt": "Neste projeto, fui responsável por implementar o sistema de arsenal, as mecânicas de itens e power-ups, e o networking multiplayer usando o Netcode for GameObjects da Unity. Isso envolveu trabalhar com Server RPCs e Client RPCs para gerenciar a comunicação entre cliente e servidor, além de estruturar o código em uma arquitetura MVC (Model-View-Controller) para garantir escalabilidade e manutenibilidade."
+    },
+    "technologies": [
+      "Unity",
+      "C#",
+      "Multiplayer Networking",
+      "MVC Architecture",
+      "Netcode for GameObjects"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Squad Smash Gameplay",
+    "src": "/videos/squadSmash.mp4",
+    "poster": "/TumbNails/SquadSmash.png",
+    "description": {
+      "en": "Developed a mobile game project in the MOBA genre, inspired by titles such as League of Legends: Wild Rift and Moba Legends, using Unity's Netcode for GameObjects. Implemented core gameplay systems including player movement and combat mechanics, with real-time multiplayer synchronization to ensure consistent gameplay across clients.",
+      "pt": "Desenvolvi um projeto de jogo mobile do gênero MOBA, inspirado em títulos como League of Legends: Wild Rift e Mobile Legends, utilizando o Netcode for GameObjects da Unity. Implementei sistemas centrais de gameplay, incluindo movimentação do jogador e mecânicas de combate, com sincronização multiplayer em tempo real para garantir uma experiência consistente entre os clientes."
+    },
+    "technologies": [
+      "Unity",
+      "C#",
+      "Multiplayer Networking",
+      "MVC Architecture",
+      "Netcode for GameObjects"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Island Gameplay",
+    "src": "/videos/island - SampleScene - Windows, Mac, Linux - Unity 6.5 (6000.5.0f1)_ _DX12_ 2026-07-03 20-00-43 (1).mp4",
+    "poster": "/TumbNails/Island.png",
+    "description": {
+      "en": "Developed an isometric island-based game where players collect resources and convert them into refined items through a simple crafting system. Implemented an intuitive drag-and-drop camera control scheme to enhance navigation and overall user experience.",
+      "pt": "Desenvolvi um jogo isométrico ambientado em uma ilha, no qual os jogadores coletam recursos e os transformam em itens refinados por meio de um sistema simples de crafting. Implementei um esquema intuitivo de controle de câmera por arrastar e soltar para melhorar a navegação e a experiência geral do usuário."
+    },
+    "technologies": [
+      "Unity",
+      "C#",
+      "MVC Architecture"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Merge Gameplay",
+    "src": "/videos/Merge - Gameplay - Windows, Mac, Linux - Unity 6.3 LTS (6000.3.10f1) _DX12_ 2026-05-29 12-20-23.mp4",
+    "poster": "/TumbNails/Merge.png",
+    "description": {
+      "en": "Developed an item-merging system that allows players to combine lower-tier items into higher-tier ones, a mechanic commonly found in quest-based games. Additionally, implemented a quest and customer order system requiring specific items to fulfill requests, creating a simple and cohesive core gameplay loop.",
+      "pt": "Desenvolvi um sistema de fusão de itens que permite aos jogadores combinar itens de nível inferior em itens de nível superior, uma mecânica comum em jogos baseados em missões. Além disso, implementei um sistema de missões e pedidos de clientes que exige itens específicos para cumprir as solicitações, criando um loop de gameplay simples e coeso."
+    },
+    "technologies": [
+      "Unity",
+      "C#",
+      "MVC Architecture"
+    ]
+  }
+]
