@@ -16,17 +16,19 @@
   },
   {
     "id": 2,
-    "title": "Create Target System - Wukong Attack Target",
-    "src": "/videos/Wukong attack Target.mp4",
-    "poster": "/TumbNails/Wukong.png",
+    "title": "Gone Rogue Multiplayer",
+    "src": "/videos/goneRouge.mp4",
+    "poster": "/TumbNails/GoneRougue.png",
     "description": {
-      "en": "In this project, I created a dynamic targeting system that adjusts the player's direction toward a target to ensure the attack hits.",
-      "pt": "Neste projeto, criei um sistema de mira dinâmico que ajusta a direção do jogador em relação a um alvo para garantir que o ataque acerte."
+      "en": "In this project, I implemented power-up mechanics, player movement, and an automatic firing system, along with multiplayer connectivity using Unity's Netcode for GameObjects to enable real-time synchronization between players.",
+      "pt": "Neste projeto, implementei mecânicas de power-ups, movimentação do jogador e um sistema de disparo automático, além da conectividade multiplayer usando o Netcode for GameObjects da Unity para permitir a sincronização em tempo real entre os jogadores."
     },
     "technologies": [
       "Unity",
       "C#",
-      "MVC Architecture"
+      "Multiplayer Networking",
+      "MVC Architecture",
+      "Netcode for GameObjects"
     ]
   },
   {

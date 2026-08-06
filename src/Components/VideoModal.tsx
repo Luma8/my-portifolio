@@ -34,7 +34,7 @@ const VideoModal = ({ title, description, src, technologies, onClose }: VideoMod
           <video src={src} controls autoPlay className="w-full max-h-[70vh]" />
           <button
             onClick={onClose}
-            aria-label={t('line11')}
+            aria-label={t('line10')}
             className="absolute top-3 right-3 w-9 h-9 rounded-full bg-dark-300/80 hover:bg-primary hover:text-dark flex items-center justify-center transition-all duration-300 text-white/80"
           >
             <FaTimes size="16px" />

@@ -3,7 +3,7 @@ import HomeImage from '../assets/Home.png';
 import { TypeAnimation } from 'react-type-animation';
 import { useTranslation } from 'react-i18next';
 import { FaArrowDown } from 'react-icons/fa';
-import { SiUnity, SiUnrealengine, SiCsharp, SiCplusplus, SiReact, SiNodedotjs, SiTypescript } from 'react-icons/si';
+import { SiUnity, SiUnrealengine, SiCsharp, SiCplusplus } from 'react-icons/si';
 import CVDownload from '../Components/CVDownload';
 import HudFrame from '../Components/HudFrame';
 import './styles.css';
@@ -13,9 +13,6 @@ const skills = [
   { icon: SiUnrealengine, label: 'Unreal Engine', level: 70 },
   { icon: SiCsharp, label: 'C#', level: 85 },
   { icon: SiCplusplus, label: 'C++', level: 65 },
-  { icon: SiReact, label: 'React', level: 90 },
-  { icon: SiNodedotjs, label: 'Node.js', level: 80 },
-  { icon: SiTypescript, label: 'TypeScript', level: 75 },
 ];
 
 const Home = () => {
@@ -46,7 +43,7 @@ const Home = () => {
                 sequence={[
                   'Game Developer',
                   4000,
-                  'Full-Stack Software Engineer',
+                  'Gameplay Programmer',
                   4000,
                 ]}
                 wrapper="span"
@@ -60,7 +57,7 @@ const Home = () => {
                 {t('line3')}
               </a>
               <a href="#videos" className="px-6 py-3 rounded-xl border border-white/10 text-white/70 font-medium text-sm hover:border-primary/40 hover:text-primary transition-all duration-300">
-                {t('line10')}
+                {t('line9')}
               </a>
               <CVDownload />
             </div>
