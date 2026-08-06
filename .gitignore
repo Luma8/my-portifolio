@@ -26,7 +26,6 @@ dist-ssr
 # Raw/unused gameplay captures - not referenced by the site, too large for git.
 # Keep these on disk locally; do not track them.
 public/videos/Wukong_PrototypeGameplayRecord.mp4
-public/videos/goneRouge.mp4
 public/videos/tinyAdventure.mp4
 public/videos/PlushiesRescure.mp4
 public/videos/Plushies Rescue - MainMenu - Android - Unity 2022.3.21f1 _DX11_ 2026-02-25 20-00-54.mp4
