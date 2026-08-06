@@ -46,7 +46,7 @@ const CVDownload = ({ compact = false }: CVDownloadProps) => {
       {open && (
         <div className="absolute right-0 mt-2 w-60 glass rounded-xl overflow-hidden shadow-2xl shadow-black/50 z-50 animate-fade-in">
           <a
-            href="/resume/Lucas_Matheus_Resume.pdf"
+            href="/resume/Lucas_Matheus_Resume_GameDev.pdf"
             download
             onClick={() => setOpen(false)}
             className="flex items-center gap-3 px-4 py-3 text-sm text-white/70 hover:bg-primary/10 hover:text-primary transition-all duration-300"
@@ -56,7 +56,7 @@ const CVDownload = ({ compact = false }: CVDownloadProps) => {
           </a>
           <div className="h-px bg-white/10"></div>
           <a
-            href="/resume/Lucas_Matheus_Currículo.pdf"
+            href="/resume/Lucas_Matheus_Curriculo_GameDev.pdf"
             download
             onClick={() => setOpen(false)}
             className="flex items-center gap-3 px-4 py-3 text-sm text-white/70 hover:bg-primary/10 hover:text-primary transition-all duration-300"
