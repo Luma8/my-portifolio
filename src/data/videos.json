@@ -1,5 +1,39 @@
 [
   {
+    "id": 7,
+    "title": "Project KYRON",
+    "src": "/videos/projectKyron.mp4",
+    "poster": "/TumbNails/ProjectKyron.png",
+    "description": {
+      "en": "A first-person shooter where I built the gunplay, weapon handling, and enemy combat, along with the full in-game HUD: compass bar, health and ammo indicators, enemy health bars, objective tracker, and loadout slots. The interface was designed for visual clarity and instant feedback, so players always know their status and goal at a glance.",
+      "pt": "Um jogo de tiro em primeira pessoa no qual desenvolvi o gunplay, o manuseio de armas e o combate contra inimigos, além de todo o HUD do jogo: bússola, indicadores de vida e munição, barras de vida dos inimigos, rastreador de objetivos e slots de equipamento. A interface foi pensada para clareza visual e feedback imediato, para que o jogador saiba seu status e objetivo com um simples olhar."
+    },
+    "technologies": [
+      "Unity",
+      "C#",
+      "UI/UX",
+      "HUD Design",
+      "MVC Architecture"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Car Battle",
+    "src": "/videos/carBattle.mp4",
+    "poster": "/TumbNails/CarBattle.png",
+    "description": {
+      "en": "A third-person zombie survival shooter featuring weapon switching, a dash mechanic, waves of enemies, and a boss fight. I designed and implemented the gameplay interface: minimap, health and dash bars, boss health bar, wave timer and threat level, score with headshot and kill popups, and a weapon selector, all focused on responsive visual feedback for every player action.",
+      "pt": "Um jogo de tiro em terceira pessoa de sobrevivência contra zumbis, com troca de armas, mecânica de dash, ondas de inimigos e luta contra chefe. Projetei e implementei a interface de gameplay: minimapa, barras de vida e dash, barra de vida do chefe, timer de ondas e nível de ameaça, pontuação com popups de headshot e abate, e seletor de armas, tudo com foco em feedback visual responsivo para cada ação do jogador."
+    },
+    "technologies": [
+      "Unity",
+      "C#",
+      "UI/UX",
+      "HUD Design",
+      "UI Animations"
+    ]
+  },
+  {
     "id": 1,
     "title": "Create a Wukong Hack n Slash Battle System",
     "src": "/videos/Wukong Attack Hack n Slash.mp4",

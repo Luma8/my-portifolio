@@ -12,7 +12,7 @@ const AboutMe = () => {
         <div className='md:w-[60%] animate-fade-in'>
           <span className="text-primary text-sm font-semibold tracking-wider uppercase">{t('line3')}</span>
           <h1 className="text-3xl md:text-4xl mt-2 mb-6 font-bold">
-            Game <span className="gradient-text">Developer</span>
+            Gamedev & <span className="gradient-text">UI/UX Engineer</span>
           </h1>
           <div className="space-y-4 text-white/70 leading-relaxed">
             <p>{t('line4')}</p>

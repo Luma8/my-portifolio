@@ -3,7 +3,7 @@ import HomeImage from '../assets/Home.png';
 import { TypeAnimation } from 'react-type-animation';
 import { useTranslation } from 'react-i18next';
 import { FaArrowDown } from 'react-icons/fa';
-import { SiUnity, SiUnrealengine, SiCsharp, SiCplusplus } from 'react-icons/si';
+import { SiUnity, SiUnrealengine, SiCsharp, SiFigma } from 'react-icons/si';
 import CVDownload from '../Components/CVDownload';
 import HudFrame from '../Components/HudFrame';
 import './styles.css';
@@ -12,7 +12,7 @@ const skills = [
   { icon: SiUnity, label: 'Unity', level: 90 },
   { icon: SiUnrealengine, label: 'Unreal Engine', level: 70 },
   { icon: SiCsharp, label: 'C#', level: 85 },
-  { icon: SiCplusplus, label: 'C++', level: 65 },
+  { icon: SiFigma, label: 'UI/UX · Figma', level: 80 },
 ];
 
 const Home = () => {
@@ -41,9 +41,11 @@ const Home = () => {
             <div className='h-16 md:h-20 flex items-center'>
               <TypeAnimation
                 sequence={[
-                  'Game Developer',
+                  'Gamedev & UI/UX Engineer',
                   4000,
                   'Gameplay Programmer',
+                  4000,
+                  'UI/UX for Games',
                   4000,
                 ]}
                 wrapper="span"
